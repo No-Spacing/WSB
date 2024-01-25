@@ -1,0 +1,10027 @@
+/*
+	@name admin_edit_customer_info_page
+*/
+/* Only edit this if you know what you are doing! */
+body { 
+	margin: 0px; 
+	padding: 0px; 
+	font-family:"Roboto"; 
+	overflow-x:hidden; 
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+/* Only edit this if you know what you are doing! */
+img { 
+	position: absolute; 
+	display: block; 
+	margin: 0px; 
+	border: none; 
+	padding: 0px; 
+}
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+#wsb12{
+	top:210px;
+	left: 240px;
+	overflow: hidden;
+	font-family: "Times New Roman";
+	font-size: 60px;
+	text-align: left;
+	-webkit-text-stroke-width: 1px;
+ 	-webkit-text-stroke-color: black;
+	line-height: 26px;
+	color:#F9FF00;
+}
+#wsb123{
+	top:305px;
+	left: 460px;
+	overflow: hidden;
+	font-family: "Times New Roman";
+	font-size: 50px;
+	text-align: left;
+	line-height: 26px;
+	color:black	;
+}
+#welcome{
+	top:100px;
+	left: 230px;
+	overflow: hidden;
+	font-family: "Times New Roman";
+	font-size: 50px;
+	text-align: left;
+	line-height: 26px;
+	color:black;
+}
+#nm{
+	top:140px;
+	left: 660px;
+	overflow: hidden;
+	font-family: "Times New Roman";
+	font-size: 30px;
+	text-align: left;
+	line-height: 26px;
+	color:black;
+}
+#rct{
+	top:220px;
+	left: 350px;
+	overflow: hidden;
+	font-family: "Times New Roman";
+	font-size: 30px;
+	text-align: left;
+	line-height: 26px;
+	color:black;
+}
+#val{
+	top:208px;
+	left: 870px;
+	overflow: hidden;
+	font-family: "Times New Roman";
+	font-size: 30px;
+	text-align: left;
+	line-height: 50px;
+	color:BLACK;
+}
+#admin1{
+	top:190px;
+	left: 580px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:BLACK;
+}
+#manager1{
+	top:570px;
+	left: 580px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:BLACK;
+}
+#customer1{
+	top:960px;
+	left: 580px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:BLACK;
+}
+#admin{
+
+	top: 230px;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 150px;
+    width: 1000px;
+    height: 300px;
+    flex-direction: column;
+    overflow-x: auto;
+}
+#manager{
+	top: 610px;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 150px;
+    width: 1000px;
+    height: 300px;
+    flex-direction: column;
+    overflow-x: auto;
+}
+#customer{
+	top: 1000px;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 150px;
+    width: 1000px;
+    height: 300px;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+
+
+
+#home11 {
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home11 > a{
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#add_manager11 {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_manager11 > a {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#manage_customers11 {
+	top: 10px;
+	left: 715px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers11 > a{
+	top: 10px;
+	left: 715px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#act_log11 {
+	top: 10px;
+	left: 980px;
+	width: 254px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#act_log11 > a {
+	top: 10px;
+	left: 980px;
+	width: 254px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+
+
+
+.depositbtn {
+	width: 130px;
+	height: 35px;
+  	background:rgba(249.9,255,0,1);
+ 	border: none;
+  	color: black;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 30px;
+  	cursor: pointer;
+}
+#deposit_02 {
+	top: 32px;
+	left: 410px;
+	width: 100px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+#infomanager_ek1 {
+	top: 100px;
+	left: 79px;
+	width: 900px;
+	height: 402px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: justified;
+	line-height: 50px;
+
+	color:#F9FF00;
+}
+
+#deposit_01 {
+	font-size:14pt;
+	top: 32px;
+	left: 150px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#deposit_00 {
+	top: 30px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 40	px;
+	color:#000000;
+}
+#customer_deposit {
+	top: 720px;
+	left: 373px;
+	width: 620px;
+	height: 150px;
+}
+
+#depositcontainer {
+	top: 0px;
+	left: 0px;
+	width: 620px;
+	height: 100px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(196,196,196,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pol{
+	color:#F9FF00;
+}
+#cfotpbox {
+	top: 140px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#policy_con {
+	top: 0px;
+	left: 0px;
+	width: 1064px;
+	height: 550px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+#otpacc {
+	top: 90px;
+	left: 171px;
+	width: 219px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+#otpaccs {
+	top: 180px;
+	left: 100px;
+	width: 500px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+.emailbtn {
+	width: 130px;
+	height: 35px;
+  	background:rgba(249.9,255,0,1);
+ 	border: none;
+  	color: black;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 30px;
+  	cursor: pointer;
+}
+#email_02 {
+	top: 32px;
+	left: 460px;
+	width: 100px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+#email_01 {
+	font-size:14pt;
+	top: 32px;
+	left: 180px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#email_00 {
+	top: 30px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 30	px;
+	color:#FFFFFF;
+}
+#edit_email {
+	top: 1150px;
+	left: 373px;
+	width: 650px;
+	height: 150px;
+}	
+
+#emailcontainer {
+	top: 0px;
+	left: -15px;
+	width: 650px;
+	height: 100px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*TABLE DESIGN */
+#flex-container {
+    top: 200px;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 150px;
+    width: 1000px;
+    height: auto;
+    flex-direction: column;
+    overflow-x: auto;
+}
+@media screen and (max-width: 1000px) {
+    .flex-container {
+        margin-left: auto;
+    }
+}
+
+#transactions {
+    font-family: OpenSans-Regular;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    #transactions {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    #transactions {
+        width:100%;
+    }
+}
+
+#transactions td, #transactions th {
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    padding: 8px;
+}
+
+#transactions tr:{
+    background-color: #f2f2f2;
+}
+
+#transactions tr:hover {
+    background-color: #ddd;
+}
+
+#transactions th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+p[id="none"] {
+    margin: auto;
+    font-size: 40px;
+    color: #212121;
+    font-family: Roboto-Regular;
+}
+
+
+/*TABLE DESIGN*/
+
+
+#admineditfname {
+	font-size:14pt;
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#admineditlname {
+	font-size:14pt;
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#admineditdbirth {
+	font-size:14pt;
+	top: 208px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#adminedithomeadd {
+	font-size:14pt;
+	top: 288px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#admineditemailadd {
+	font-size:14pt;
+	top: 372px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#admineditphonenum {
+	font-size:14pt;
+	top: 455px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#admineditcurrbal {
+	font-size:14pt;
+	top: 538px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#admineditaccnum {
+	font-size:14pt;
+	top: 620px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#admineditpinnum {
+	font-size:14pt;
+	top: 700px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#adminedituserid {
+	font-size:14pt;
+	top: 782px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#admineditpass {
+	font-size:14pt;
+	top: 864px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+
+
+
+#addmanagerfname {
+	font-size:14pt;
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#addmanagerlname {
+	font-size:14pt;
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#addmanagerid {
+	font-size:14pt;
+	top: 138px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#addmanagerpass {
+	font-size:14pt;
+	top: 212px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#addmanagerconpass {
+	font-size:14pt;
+	top: 290px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#adminid {
+	font-size:14pt;
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#adminpass {
+	font-size:14pt;
+	top: 179px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+/* manager side below */
+#addfname {
+	font-size:14pt;
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#addlname {
+	font-size:14pt;
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#dbirth {
+	font-size:14pt;
+	top: 208px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+
+
+#homeadd {
+	font-size:14pt;
+	top: 288px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#emailadd {
+	font-size:14pt;
+	top: 372px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#phonenum {
+	font-size:14pt;
+	top: 455px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+
+#currbal {
+	font-size:14pt;
+	top: 538px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#accnum {
+	font-size:14pt;
+	top: 620px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#pinnum {
+	font-size:14pt;
+	top: 700px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#mdeletenews {
+	top: 60px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+#mpostnews {
+	top: 60px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+
+
+#managerid
+{	
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+    font-size:14pt;
+}
+#managerpass
+{
+	top: 179px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+    font-size:14pt;
+}
+
+
+
+
+/* Customer side below */
+#craccno{
+	top: 121px;
+	left: 54px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+#cruserid{
+	top: 180px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+#crpass{
+	top: 243px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+#crconpass {
+	top: 304px;
+	left: 54px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+
+
+
+#cfpassemail{
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+#cfpassaccno{
+
+	top: 179px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+	font-size:14pt;
+}
+#ctransbtn {
+	top: 504px;
+	left: 405px;
+	width: 170px;
+	height: 35px;
+}
+
+#ctransfname {
+	font-size:14pt;
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#ctranslname {
+	font-size:14pt;
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#ctransaccno {
+	font-size:14pt;
+	top: 138px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#ctransemail {
+	font-size:14pt;
+	top: 212px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#ctransphoneno {
+	font-size:14pt;
+	top: 290px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#ctransamount {
+	font-size:14pt;
+	top: 364px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#ctranspass {
+	font-size:14pt;
+	top: 439px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#cpaymayniladaccno{
+	font-size:14pt;
+	top: 134px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpaymayniladaccname{
+	font-size:14pt;
+	top: 208px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpaymayniladamount{
+	font-size:14pt;
+	top: 282px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpaymaynilademail{
+	font-size:14pt;
+	top: 356px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpaymayniladpin{
+	font-size:14pt;
+	top: 429px;
+	left: 76px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+
+#cpaymeralcoaccno{
+	font-size:14pt;
+	top: 135px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpaymeralcoamount{
+	font-size:14pt;
+	top: 209px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpaymeralcoemail{
+	font-size:14pt;
+	top: 283px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpaymeralcopin{
+	font-size:14pt;
+	top: 357px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#cemail{
+	font-size:14pt;
+	top: 67px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cnumber{
+	font-size:14pt;
+	top: 141px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cpass{
+	font-size:14pt;
+	top: 215px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cconpass{
+	font-size:14pt;
+	top: 289px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#userid
+{
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+    font-size:14pt;
+}
+#userpass
+{
+	top: 179px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+    font-size:14pt;
+}
+
+.button {
+	width: 170px;
+	height: 40px;
+  	background:rgba(249.9,255,0,1);
+ 	border: none;
+  	color: black;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 30px;
+  	cursor: pointer;
+}
+/*orig css below*/
+#content-container { 
+	display: table; 
+	position: relative;  
+	margin-left: auto; 
+	margin-right: auto;  
+}
+
+#content-container > div{ 
+	position: relative; 
+	top:inherit; 
+}
+#page_admin_edit_customer_info_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__admin_edit_customer_info_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 1250px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#aeditcusnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout >a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+
+#client_nav_bar {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#aeditcusnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home {
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home > a{
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#add_manager {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_manager > a {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#manage_customers {
+	top: 10px;
+	left: 715px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers > a{
+	top: 10px;
+	left: 715px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#form1 {
+	top: 200px;
+	left: 358px;
+	width: 650px;
+	height: 1000px;
+}
+
+#aeditcuscontainer {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 920px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#first_name_ {
+	top: 38px;
+	left: 90px;
+	width: 120px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusfname {
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#last_name_ {
+	top: 38px;
+	left: 360px;
+	width: 120px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcuslname {
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#gender_ {
+	top: 118px;
+	left: 90px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#male {
+	top: 118px;
+	left: 238px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusmale {
+	top: 119px;
+	left: 209px;
+	width: 20px;
+	height: 20px;
+	-ms-border-radius: 10px / 10px;
+	-o-border-radius: 10px / 10px;
+	-moz-border-radius: 10px / 10px;
+	-webkit-border-radius: 10px / 10px;
+	border-radius: 10px / 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#other {
+	top: 118px;
+	left: 389px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusother {
+	top: 119px;
+	left: 360px;
+	width: 20px;
+	height: 20px;
+	-ms-border-radius: 10px / 10px;
+	-o-border-radius: 10px / 10px;
+	-moz-border-radius: 10px / 10px;
+	-webkit-border-radius: 10px / 10px;
+	border-radius: 10px / 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#female {
+	top: 148px;
+	left: 237px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusfemale {
+	top: 149px;
+	left: 209px;
+	width: 20px;
+	height: 20px;
+	-ms-border-radius: 10px / 10px;
+	-o-border-radius: 10px / 10px;
+	-moz-border-radius: 10px / 10px;
+	-webkit-border-radius: 10px / 10px;
+	border-radius: 10px / 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#date_of_birth_ {
+	top: 182px;
+	left: 90px;
+	width: 140px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusdobbox {
+	top: 208px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#home_address_ {
+	top: 263px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcushomebox {
+	top: 288px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#email_address_ {
+	top: 343px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusemailbox {
+		overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 35px;
+	top: 372px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#phone_no__ {
+	top: 427px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusphonenobox {
+	top: 455px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#current_balance_ {
+	top: 510px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcuscurbalbox {
+	top: 538px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#account_no__ {
+	top: 593px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcusaccnobox {
+
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 35px;
+	top: 620px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#pin_no__ {
+	top: 675px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcuspinbox {
+	top: 700px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#user_i_d__ {
+	top: 755px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcususeridbox {
+	top: 782px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#password_ {
+	top: 837px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aeditcuspassbox {
+	top: 864px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#aeditcusbtn {
+	top: 845px;
+	left: 405px;
+	width: 170px;
+	height: 40px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit {
+	top: 931px;
+	left: 460px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_admin_manage_customers_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__admin_manage_customers_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;;
+	width: 1366px;
+	height: 1400px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#amanagecusnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek1 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek1 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek1 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek1 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#amanagecusnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek1 {
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek1 > a{
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#add_manager_ek1 {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_manager_ek1 > a {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#manage_customers_ek1 {
+	top: 10px;
+	left: 715px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	text-decoration: underline;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek1 > a{
+	top: 10px;
+	left: 715px;
+	width: 263px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	text-decoration: underline;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#page_admin_add_manager_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__admin_add_manager_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#aaddmanagernavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek2 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek2 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek2 > a {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek2 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#aaddmanagernavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek2 {
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek2 > a{
+	top: 10px;
+	left:250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#add_manager_ek2 {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_manager_ek2 > a{
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#add_manager_ek23 {
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_manager_ek23 > a{
+	top: 10px;
+	left: 528px;
+	width: 187px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#manage_customers_ek2 {
+	top: 10px;
+	left: 715px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek2 > a{
+	top: 10px;
+	left: 715px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#form_ek1 {
+	top: 200px;
+	left: 358px;
+	width: 650px;
+	height: 425px;
+}
+
+#aaddmanagercontainer {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 500px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#first_name__ek1 {
+	top: 38px;
+	left: 90px;
+	width: 209px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aaddmanagerfnamebox {
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#last_name__ek1 {
+	top: 38px;
+	left: 360px;
+	width: 207px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aaddmanagerlnamebox {
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#manager_id_ {
+	top: 112px;
+	left: 90px;
+	width: 217px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aaddmanageridbox {
+	top: 138px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#password__ek1 {
+	top: 187px;
+	left: 90px;
+	width: 245px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aaddmanagerpassbox {
+	top: 212px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#confirm_password_ {
+	top: 261px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#aaddmanagerconpassbox {
+	top: 290px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#email_id {
+	top: 340px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+#email_idbox1 {
+	top: 370px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#addemailid {
+	font-size:14pt;
+	top: 290px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#aaddmanagerbtn {
+	top: 430px;
+	left: 405px;
+	width: 170px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit_ek1 {
+	top: 360px;
+	left: 460px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_admin_home_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__admin_home_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek3 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#ahomenavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek3 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek3 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek3 > a {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek3 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#ahomenavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek3 {
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek3 > a{
+	top: 10px;
+	left: 250px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#managerlist_ek3 {
+	top: 10px;
+	left: 350px;
+	width: 200px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#managerlist_ek3 > a{
+	top: 10px;
+	left: 350px;
+	width: 200px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#managerlist_ek32 {
+	top: 10px;
+	left: 350px;
+	width: 200px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#managerlist_ek32 > a{
+	top: 10px;
+	left: 350px;
+	width: 200px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_manager_ek3 {
+	top: 10px;
+	left: 528px;
+	width: 167px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_manager_ek3 > a{
+	top: 10px;
+	left: 528px;
+	width: 167px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#manage_customers_ek3 {
+	top: 10px;
+	left: 715px;
+	width: 254px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek3 > a {
+	top: 10px;
+	left: 715px;
+	width: 254px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#act_logs {
+	top: 10px;
+	left: 980px;
+	width: 254px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#act_logs > a {
+	top: 10px;
+	left: 980px;
+	width: 254px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#admininfo {
+	top: 200px;
+	left: 165px;
+	width: 1064px;
+	height: 505px;
+}
+
+#ahomecontainer {
+	top: 0px;
+	left: 0px;
+	width: 1064px;
+	height: 505px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#__admin_access_page_ {
+	top: 33px;
+	left: 333px;
+	width: 402px;
+	height: 87px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+	color:#F9FF00;
+}
+
+
+#infoadmin {
+	top: 100px;
+	left: 96px;
+	width: 900px;
+	height: 402px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 50px;
+	color:#F9FF00;
+}
+
+#page_admin_login_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__admin_login_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek4 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#aloginnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek4 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+
+#login_form {
+	top: 200px;
+	left: 404px;
+	width: 558px;
+	height: 375px;
+}
+
+#alogincontainer {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 375px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#log_in_to_wsb_online_banking {
+	top: 28px;
+	left: 79px;
+	width: 402px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+
+#admin_id_ {
+	top: 86px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#aloginadminidbox {
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#password__ek2 {
+	top: 155px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#aloginpassbox {
+	top: 179px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#aloginbtn {
+	top: 240px;
+	left: 344px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#login {
+	top: 247px;
+	left: 402px;
+	width: 45px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_manager_post_news_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__manager_post_news_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 1000px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek5 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#mpostnewsnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek5 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek5 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek5 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek4 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#mpostnewsnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek4 {
+	top: 10px;
+	left: 340px;
+	width: 104px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek4 > a{
+	top: 10px;
+	left: 340px;
+	width: 104px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#add_customer {
+	top: 10px;
+	left: 444px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_customer > a {
+	top: 10px;
+	left: 444px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#manage_customers_ek4 {
+	top: 10px;
+	left: 641px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek4 > a{
+	top: 10px;
+	left: 641px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#post_news {
+	top: 10px;
+	left: 900px;
+	width: 153px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#post_news >a{
+	top: 10px;
+	left: 900px;
+	width: 153px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#postform {
+	top: 200px;
+	left: 358px;
+	width: 650px;
+	height: 510px;
+}
+
+#rectangle_2 {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 510px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#news_headline_ {
+	top: 32px;
+	left: 90px;
+	width: 239px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#mpostnewsheadlinebox {
+	top: 60px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#details_ {
+	top: 117px;
+	left: 90px;
+	width: 229px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#mpostnewsdetailsbox {
+	top: 145px;
+	left: 75px;
+	width: 500px;
+	height: 250px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#mpostnewssubmitbtn {
+	top: 426px;
+	left: 405px;
+	width: 170px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit_ek2 {
+	top: 433px;
+	left: 460px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#deleteform {
+	top: 760px;
+	left: 362px;
+	width: 650px;
+	height: 185px;
+}
+
+#rectangle_2_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 185px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#enter_the_news_headline_you_want_to_delete_ {
+	top: 32px;
+	left: 90px;
+	width: 454px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#mpostnewsdeletebox {
+	top: 60px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#mpostnewsdeletebtn {
+	top: 117px;
+	left: 405px;
+	width: 170px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#delete {
+	top: 124px;
+	left: 463px;
+	width: 53px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_manager_customer_info_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__manager_customer_info_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 840px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek6 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#mcusinfonavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek6 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek6 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek6 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek5 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#mcusinfonavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek5 {
+	top: 10px;
+	left: 340px;
+	width: 93px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek5 > a{
+	top: 10px;
+	left: 340px;
+	width: 93px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#add_customer_ek1 {
+	top: 10px;
+	left: 444px;
+	width: 184px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_customer_ek1 > a{
+	top: 10px;
+	left: 444px;
+	width: 184px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#manage_customers_ek5 {
+	top: 10px;
+	left: 641px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek5 > a {
+	top: 10px;
+	left: 641px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#post_news_ek1 {
+	top: 10px;
+	left: 900px;
+	width: 168px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#post_news_ek1 > a {
+	top: 10px;
+	left: 900px;
+	width: 168px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#customer_info {
+	top: 200px;
+	left: 373px;
+	width: 620px;
+	height: 475px;
+}
+
+#mcusinfocontainer {
+	top: 0px;
+	left: 0px;
+	width: 620px;
+	height: 475px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(196,196,196,1);
+}
+
+
+#name_ {
+	top: 22px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#gender__ek1 {
+	top: 72px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#account_no_ {
+	top: 120px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#balance__php__ {
+	top: 170px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#date_of_birth__ek1 {
+	top: 220px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#email_address__ek1 {
+	top: 270px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#phone_no___ek1 {
+	top: 320px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#home_address__ek1 {
+	top: 370px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#user_id_ {
+	top: 420px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#password__ek3 {
+	top: 470px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#pin_ {
+	top: 520px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+#page_manager_manage_customers_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__manager_manage_customers_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek7 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#mmanagecusnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek7 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek7 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek7 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek6 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#mmanagecusnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek6 {
+	top: 10px;
+	left: 340px;
+	width: 84px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek6 > a{
+	top: 10px;
+	left: 340px;
+	width: 84px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#add_customer_ek2 {
+	top: 10px;
+	left: 444px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_customer_ek2 > a {
+	top: 10px;
+	left: 444px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#manage_customers_ek6 {
+	top: 10px;
+	left: 641px;
+	width: 259px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek6 > a{
+	top: 10px;
+	left: 641px;
+	width: 259px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#post_news_ek2 {
+	top: 10px;
+	left: 900px;
+	width: 184px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#post_news_ek2 > a{
+	top: 10px;
+	left: 900px;
+	width: 184px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#page_manager_add_customer_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+}
+
+#_bg__manager_add_customer_page_ek2 {
+
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 1090px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek8 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#maddcusnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek8 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek8 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek8 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek7 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#maddcusnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek7 {
+	top: 10px;
+	left: 340px;
+	width: 93px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek7 > a{
+	top: 10px;
+	left: 340px;
+	width: 93px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#add_customer_ek3 {
+	top: 10px;
+	left: 444px;
+	width: 184px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_customer_ek3 > a{
+	top: 10px;
+	left: 444px;
+	width: 184px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#post_news_ek3 {
+	top: 10px;
+	left: 900px;
+	width: 168px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#post_news_ek3 >a {
+	top: 10px;
+	left: 900px;
+	width: 168px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#manage_customers_ek7 {
+	top: 10px;
+	left: 641px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek7 >a {
+	top: 10px;
+	left: 641px;
+	width: 249px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#form_ek2 {
+	top: 200px;
+	left: 358px;
+	width: 650px;
+	height: 841px;
+}
+
+#maddcuscontainer {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 770px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#first_name__ek2 {
+	top: 38px;
+	left: 90px;
+	width: 120px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusfname {
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#last_name__ek2 {
+	top: 38px;
+	left: 360px;
+	width: 120px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcuslname {
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#gender__ek2 {
+	top: 118px;
+	left: 90px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#male_ek1 {
+	top: 118px;
+	left: 238px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusmale {
+	top: 119px;
+	left: 209px;
+	width: 20px;
+	height: 20px;
+	-ms-border-radius: 10px / 10px;
+	-o-border-radius: 10px / 10px;
+	-moz-border-radius: 10px / 10px;
+	-webkit-border-radius: 10px / 10px;
+	border-radius: 10px / 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#other_ek1 {
+	top: 118px;
+	left: 389px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusother {
+	top: 119px;
+	left: 360px;
+	width: 20px;
+	height: 20px;
+	-ms-border-radius: 10px / 10px;
+	-o-border-radius: 10px / 10px;
+	-moz-border-radius: 10px / 10px;
+	-webkit-border-radius: 10px / 10px;
+	border-radius: 10px / 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#female_ek1 {
+	top: 148px;
+	left: 237px;
+	width: 110px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusfemale {
+	top: 149px;
+	left: 209px;
+	width: 20px;
+	height: 20px;
+	-ms-border-radius: 10px / 10px;
+	-o-border-radius: 10px / 10px;
+	-moz-border-radius: 10px / 10px;
+	-webkit-border-radius: 10px / 10px;
+	border-radius: 10px / 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#date_of_birth__ek2 {
+	top: 182px;
+	left: 90px;
+	width: 140px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusdobbox {
+	top: 208px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#home_address__ek2 {
+	top: 263px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcushomebox {
+	top: 288px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#email_address__ek2 {
+	top: 343px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusemailbox {
+	top: 372px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#phone_no___ek2 {
+	top: 427px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusphonebox {
+	top: 455px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#current_balance__ek1 {
+	top: 510px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcuscurbalbox {
+	top: 538px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#account_no___ek1 {
+	top: 593px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcusaccbox {
+	top: 620px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#pin_no___ek1 {
+	top: 593px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#maddcuspinbox {
+	top: 620px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#maddcusbtn {
+	top: 690px;
+	left: 405px;
+	width: 170px;
+	height: 40px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit_ek3 {
+	top: 772px;
+	left: 460px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_manager_home_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__manager_home_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek9 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#mhomenavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek9 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#logout_ek9 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek9 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek8 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#mhomenavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek8 {
+	top: 10px;
+	left: 340px;
+	width: 84px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek8 > a{
+	top: 10px;
+	left: 340px;
+	width: 84px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#add_customer_ek4 {
+	top: 10px;
+	left: 444px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#add_customer_ek4 > a{
+	top: 10px;
+	left: 444px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#manage_customers_ek8 {
+	top: 10px;
+	left: 641px;
+	width: 259px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#manage_customers_ek8 > a{
+	top: 10px;
+	left: 641px;
+	width: 259px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#post_news_ek4 {
+	top: 10px;
+	left: 900px;
+	width: 155px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#post_news_ek4 > a {
+	top: 10px;
+	left: 900px;
+	width: 155px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#managerinfo {
+	top: 200px;
+	left: 165px;
+	width: 1064px;
+	height: 505px;
+}
+
+#mhomecontainer {
+	top: 0px;
+	left: 0px;
+	width: 1064px;
+	height: 505px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#__manager_access_page_ {
+	top: 33px;
+	left: 333px;
+	width: 402px;
+	height: 87px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 32px;
+	color:#F9FF00;
+}
+
+
+#infomanager {
+	top: 100px;
+	left: 96px;
+	width: 900px;
+	height: 402px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 50px;
+	color:#F9FF00;
+}
+
+#page_manager_login_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__manager_login_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek10 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#mloginnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wall_street_bank_ek10 {
+	top: 15px;
+	left: 445px;
+	width: 476px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+#login_form_ek1 {
+	top: 200px;
+	left: 404px;
+	width: 558px;
+	height: 375px;
+}
+
+#mlogincontainer {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 375px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#log_in_to_wsb_online_banking_ek1 {
+	top: 28px;
+	left: 79px;
+	width: 402px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+
+#manager_id {
+	top: 86px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#mloginmanagidbox {
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#password__ek4 {
+	top: 155px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#mloginpassbox {
+	top: 179px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#mloginbtn {
+	top: 240px;
+	left: 344px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#login_ek1 {
+	top: 247px;
+	left: 402px;
+	width: 45px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_customer__reset_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+}
+
+#_bg__customer__reset_page_ek2 {
+
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek11 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cresetnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb > a{
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news {
+	top: 30px;
+	left: 930px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news > a{
+	top: 30px;
+	left: 930px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us >a {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#loginbtn {
+	top: 24px;
+	left: 1274px;
+	width: 53.36px;
+	height: 50px;
+}
+
+#login_form_ek2 {
+	top: 200px;
+	left: 404px;
+	width: 558px;
+	height: 375px;
+}
+
+#cresetcontainer {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 375px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#check_your_email_for_reset_passsword_ {
+	top: 50px;
+	left: 50px;
+	width: 500px;
+	height: 170px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: center;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+#page_customer__registered_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__customer__registered_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek12 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cregednavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek1 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek1 > a {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+#news_ek1 {
+	top: 30px;
+	left: 930px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek1 >a {
+	top: 30px;
+	left: 930px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek1 {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek1 > a{
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+
+#loginbtn_ek1 {
+	top: 24px;
+	left: 1274px;
+	width: 53.36px;
+	height: 50px;
+}
+
+#login_form_ek3 {
+	top: 200px;
+	left: 404px;
+	width: 558px;
+	height: 375px;
+}
+
+#cregedcontainer {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 375px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#your_online_banking_account_has_been_registered_ {
+	top: 114px;
+	left: 129px;
+	width: 290px;
+	height: 170px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: center;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+#page_customer_forgot_password_user_id_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+}
+
+#_bg__customer_forgot_password_user_id_page_ek2 {
+
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek13 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cfpassnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek2 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek2 > a {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek2 {
+	top: 30px;
+	left: 930px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek2 > a{
+	top: 30px;
+	left: 930px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek2 {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek2 >a {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#loginbtn_ek2 {
+	top: 24px;
+	left: 1274px;
+	width: 53.36px;
+	height: 50px;
+}
+
+#cfpassform {
+	top: 200px;
+	left: 404px;
+	width: 558px;
+	height: 375px;
+}
+
+#cfpasscontainer {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 375px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#reset_account {
+	top: 50px;
+	left: 171px;
+	width: 219px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+
+#email_address__ek3 {
+	top: 86px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cfpassemailbox {
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#account_number_ {
+	top: 110px;
+	left: 69px;
+	width: 173px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cfpassaccbox {
+	top: 140px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#cfpasssubmitbtn {
+	top: 220px;
+	left: 330px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit_ek4 {
+	top: 247px;
+	left: 395px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_customer_register_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__customer_register_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek14 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cregisternavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek3 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek3 >a {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek3 {
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek3 > a{
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+
+#about_us_ek3 {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek3 > a{
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+
+#loginbtn_ek3 {
+	top: 24px;
+	left: 1274px;
+	width: 53.36px;
+	height: 50px;
+}
+
+#cregisterform {
+	top: 200px;
+	left: 404px;
+	width: 558px;
+	height: 441px;
+}
+
+#cregcontainer {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 441px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#register_to_wsb_online_banking {
+	top: 28px;
+	left: 69px;
+	width: 461px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+
+#account_number__ek1 {
+	top: 100px;
+	left: 69px;
+	width: 173px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cregaccnobox {
+	top: 121px;
+	left: 54px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#user_id__ek1 {
+	top: 160px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cregusebox {
+	top: 180px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#password__ek5 {
+	top: 221px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cregpassbox {
+	top: 243px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#confirm_password__ek1 {
+	top: 282px;
+	left: 68px;
+	width: 174px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cregconpassbox {
+	top: 304px;
+	left: 54px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#checkbox1 {
+	top: 347px;
+	left:90px;
+	width: 450px;
+	height: 35px;
+}
+#policy {
+	top: 348px;
+	left: 113px;
+	width: 300px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 13px;
+	text-align: left;
+	line-height: 18px;
+	color:#F9FF00;
+}
+#cregisterbtn {
+	top: 375px;
+	left: 330px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#register {
+	top: 374px;
+	left: 391px;
+	width: 68px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_customer_paymaynilad_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__customer_paymaynilad_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;;
+	width: 1366px;
+	height: 790px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek15 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cmayniladnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek4 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek4 > a{
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek4 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek4 > a{
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek4 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek4 > a {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek10 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek10 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek9 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#cmayniladnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek9 {
+	top: 10px;
+	left: 142px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek9 > a {
+	top: 10px;
+	left: 142px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_account {
+	top: 10px;
+	left: 245px;
+	width: 151px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account > a{
+	top: 10px;
+	left: 245px;
+	width: 151px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_transactions {
+	top: 10px;
+	left: 415px;
+	width: 205px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions > a{
+	top: 10px;
+	left: 415px;
+	width: 205px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#transfer_money {
+	top: 10px;
+	left: 636px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money > a {
+	top: 10px;
+	left: 636px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#pay_bills {
+	top: 10px;
+	left: 846px;
+	width: 109px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills >a {
+	top: 10px;
+	left: 846px;
+	width: 109px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#account_maintenance {
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance > a{
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#cmayniladform {
+	top: 200px;
+	left: 358px;
+	width: 650px;
+	height: 550px;
+}
+
+#cmayniladcontainer {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 550px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#maynilad_icon2 {
+	top: 21px;
+	left: 288px;
+	width: 75px;
+	height: 72px;
+}
+
+
+#contract_account_number__8_digit__ {
+	top: 108px;
+	left: 90px;
+	width: 354px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#xmayniladaccnobox {
+	top: 134px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#account_name_ {
+	top: 183px;
+	left: 90px;
+	width: 158px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmayniladaccnamebox {
+	top: 208px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#amount_ {
+	top: 257px;
+	left: 90px;
+	width: 172px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmayniladamountbox {
+	top: 282px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#email_address__ek4 {
+	top: 332px;
+	left: 90px;
+	width: 157px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmaynilademailbox {
+	top: 356px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#pin__ek1 {
+	top: 405px;
+	left: 91px;
+	width: 111px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmayniladpinbox {
+	top: 429px;
+	left: 76px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#cmayniladbtn {
+	top: 488px;
+	left: 404px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit_ek5 {
+	top: 495px;
+	left: 455px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_customer_paymeralco_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__customer_paymeralco_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 720px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek16 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cpaymeralconavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek5 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek5 >a {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek5 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek5> a {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek5 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek5 > a {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek11 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek11 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek10 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#cpaymeralconavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek10 {
+	top: 10px;
+	left: 142px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek10 > a{
+	top: 10px;
+	left: 142px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_account_ek1 {
+	top: 10px;
+	left: 245px;
+	width: 151px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account_ek1 > a{
+	top: 10px;
+	left: 245px;
+	width: 151px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_transactions_ek1 {
+	top: 10px;
+	left: 415px;
+	width: 205px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions_ek1 > a{
+	top: 10px;
+	left: 415px;
+	width: 205px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#transfer_money_ek1 {
+	top: 10px;
+	left: 636px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money_ek1 > a {
+	top: 10px;
+	left: 636px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#pay_bills_ek1 {
+	top: 10px;
+	left: 846px;
+	width: 109px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills_ek1 > a {
+	top: 10px;
+	left: 846px;
+	width: 109px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#account_maintenance_ek1 {
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance_ek1 > a{
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#cmeralcoform {
+	top: 199px;
+	left: 358px;
+	width: 650px;
+	height: 487px;
+}
+
+#cmeralcocontainer {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 487px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#meralco_icon2 {
+	top: 25px;
+	left: 290px;
+	width: 70px;
+	height: 65px;
+}
+
+
+#customer_account_number__can__ {
+	top: 109px;
+	left: 90px;
+	width: 350px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmeralcoaccountno {
+	top: 135px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#amount__ek1 {
+	top: 184px;
+	left: 90px;
+	width: 90px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmeralcoamount {
+	top: 209px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#email_address__ek5 {
+	top: 258px;
+	left: 90px;
+	width: 172px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmeralcoemail {
+	top: 283px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#pin__ek2 {
+	top: 333px;
+	left: 90px;
+	width: 111px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cmeralcopinbox {
+	top: 357px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#cpaymeralcobtn {
+	top: 421px;
+	left: 414px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit_ek6 {
+	top: 428px;
+	left: 465px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_customer_paybills_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__customer_paybills_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek17 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cpaybillsnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek6 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek6 > a{
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+#news_ek6 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek6 > a{
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek6 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek6 > a{
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek12 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek12 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek11 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#cpaybillsnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek11 {
+	top: 10px;
+	left: 142px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek11 > a{
+	top: 10px;
+	left: 142px;
+	width: 91px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_account_ek2 {
+	top: 10px;
+	left: 245px;
+	width: 151px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account_ek2 > a{
+	top: 10px;
+	left: 245px;
+	width: 151px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_transactions_ek2 {
+	top: 10px;
+	left: 415px;
+	width: 205px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions_ek2 > a{
+	top: 10px;
+	left: 415px;
+	width: 205px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#transfer_money_ek2 {
+	top: 10px;
+	left: 636px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money_ek2 > a{
+	top: 10px;
+	left: 636px;
+	width: 197px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#pay_bills_ek2 {
+	top: 10px;
+	left: 846px;
+	width: 109px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills_ek2 > a{
+	top: 10px;
+	left: 846px;
+	width: 109px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#account_maintenance_ek2 {
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance_ek2 > a{
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#icons {
+	top: 225px;
+	left: 350px;
+	width: 684.17px;
+	height: 300px;
+}
+
+#meralco_icon1 {
+	top: 40px;
+	left: 0px;
+	width: 244.64px;
+	height: 228.07px;
+}
+
+
+#line_1 {
+	top: 20px;
+	left: 325px;
+	width: 10px;
+	height: 270px;
+}
+
+
+#maynilad_icon1 {
+	top: 33px;
+	left: 429px;
+	width: 255.17px;
+	height: 245px;
+}
+
+#page_customer_accountmaintenance_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+}
+
+#_bg__customer_accountmaintenance_page_ek2 {
+
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek18 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#caccmainnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek7 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek7 > a{
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+#news_ek7 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek7 > a{
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek7 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek7 >a{
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek13 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek13 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek12 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#caccmainnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek12 {
+	top: 10px;
+	left: 142px;
+	width: 93px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek12 > a{
+	top: 10px;
+	left: 142px;
+	width: 93px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_account_ek3 {
+	top: 10px;
+	left: 245px;
+	width: 162px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account_ek3 > a{
+	top: 10px;
+	left: 245px;
+	width: 162px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_transactions_ek3 {
+	top: 10px;
+	left: 415px;
+	width: 221px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions_ek3 > a{
+	top: 10px;
+	left: 415px;
+	width: 221px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#transfer_money_ek3 {
+	top: 10px;
+	left: 636px;
+	width: 190px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money_ek3 >a{
+	top: 10px;
+	left: 636px;
+	width: 190px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#pay_bills_ek3 {
+	top: 10px;
+	left: 846px;
+	width: 118px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills_ek3 > a{
+	top: 10px;
+	left: 846px;
+	width: 118px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#account_maintenance_ek3 {
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance_ek3 > a{
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#accountmaintenanceform {
+	top: 200px;
+	left: 358px;
+	width: 650px;
+	height: 434px;
+}
+
+#caccountmaincontainer {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 434px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#email_address__ek6 {
+	top: 41px;
+	left: 220px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size:50px;
+	text-align: left;
+	line-height:50px;
+	color:#FFFFFF;
+}
+
+
+#caccmainemail {
+	top: 67px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#mobile_number_ {
+	top: 116px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#caccmainphoneno {
+	top: 141px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#password__ek6 {
+	top: 190px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cpassaccmain {
+	top: 215px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#confirm_password__ek2 {
+	top: 265px;
+	left: 90px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#cconpassaccmain {
+		top: 289px;
+		left: 75px;
+		width: 500px;
+		height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#caccmainbtn {
+	top: 363px;
+	left: 414px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#save {
+	top: 370px;
+	left: 475px;
+	width: 39px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_customer_transfermoney_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__customer_transfermoney_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 500px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek19 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#rectangle_1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek8 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek8 > a{
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+#news_ek8 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek8 > a{
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek8 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek8 > a{
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek14 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek14 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek13 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#rectangle_8 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek13 {
+	top: 10px;
+	left: 142px;
+	width: 77px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek13 >a{
+	top: 10px;
+	left: 142px;
+	width: 77px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_account_ek4 {
+	top: 10px;
+	left: 245px;
+	width: 154px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account_ek4 >a{
+	top: 10px;
+	left: 245px;
+	width: 154px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_transactions_ek4 {
+	top: 10px;
+	left: 415px;
+	width: 200px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions_ek4 >a{
+	top: 10px;
+	left: 415px;
+	width: 200px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#transfer_money_ek4 {
+	top: 10px;
+	left: 636px;
+	width: 210px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money_ek4 >a{
+	top: 10px;
+	left: 636px;
+	width: 210px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#pay_bills_ek4 {
+	top: 10px;
+	left: 846px;
+	width: 112px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills_ek4 >a{
+	top: 10px;
+	left: 846px;
+	width: 112px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#account_maintenance_ek4 {
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance_ek4 >a{
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transmoneyform {
+	top: 200px;
+	left: 358px;
+	width: 650px;
+	height: 470px;
+}
+
+#ctransmoneycontainer {
+	top: 0px;
+	left: 0px;
+	width: 650px;
+	height: 420px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+#ctransmoneycontainers {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 375px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+#sentinfo {
+	top: 114px;
+	left: 129px;
+	width: 290px;
+	height: 170px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: center;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+#receiver_first_name_ {
+	top: 38px;
+	left: 90px;
+	width: 209px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#ctransmoneyfname {
+	top: 63px;
+	left: 75px;
+	width: 250px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#receiver_last_name_ {
+	top: 38px;
+	left: 360px;
+	width: 207px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#ctransmoneylname {
+	top: 63px;
+	left: 345px;
+	width: 230px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#receiver_account_no_ {
+	top: 112px;
+	left: 90px;
+	width: 217px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#ctransmoneyaccountno {
+	top: 138px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#enter_amount__in_php__ {
+	top: 187px;
+	left: 90px;
+	width: 239px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#ctransmoneyamount {
+	top: 212px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#enter_your_password_ {
+	top: 261px;
+	left: 90px;
+	width: 229px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+
+
+#ctransmoneypass {
+	top: 290px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#ctransmoneybtn {
+	top: 348px;
+	left: 405px;
+	width: 170px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#submit_ek7 {
+	top: 511px;
+	left: 460px;
+	width: 60px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+#page_customer_mytransactions_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__customer_mytransactions_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek20 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cmytransnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek9 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek9 >a {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+#news_ek9 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek9 > a{
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek9 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek9 > a{
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek15 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek15 > a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek14 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#cmytransnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek14 {
+	top: 10px;
+	left: 142px;
+	width: 77px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek14 > a{
+	top: 10px;
+	left: 142px;
+	width: 77px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_account_ek5 {
+	top: 10px;
+	left: 245px;
+	width: 154px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account_ek5 > a{
+	top: 10px;
+	left: 245px;
+	width: 154px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#my_transactions_ek5 {
+	top: 10px;
+	left: 415px;
+	width: 202px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions_ek5 > a{
+	top: 10px;
+	left: 415px;
+	width: 202px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#transfer_money_ek5 {
+	top: 10px;
+	left: 636px;
+	width: 194px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money_ek5 > a {
+	top: 10px;
+	left: 636px;
+	width: 194px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#pay_bills_ek5 {
+	top: 10px;
+	left: 846px;
+	width: 114px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills_ek5 > a{
+	top: 10px;
+	left: 846px;
+	width: 114px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#account_maintenance_ek5 {
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance_ek5 >a{
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#page_customer_myaccount_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__customer_myaccount_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 840px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek21 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cmyaccountnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek10 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek10 > a{
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek10 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek10 > a{
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek10 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek10 >a{
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek16 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek16 >a{
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#client_nav_bar_ek15 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#cmyaccountnavbar2 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek15 {
+	top: 10px;
+	left: 142px;
+	width: 88px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek15 > a{
+	top: 10px;
+	left: 142px;
+	width: 88px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_account_ek6 {
+	top: 10px;
+	left: 245px;
+	width: 157px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account_ek6 > a{
+	top: 10px;
+	left: 245px;
+	width: 157px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_transactions_ek6 {
+	top: 10px;
+	left: 415px;
+	width: 204px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions_ek6 > a{
+	top: 10px;
+	left: 415px;
+	width: 204px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#transfer_money_ek6 {
+	top: 10px;
+	left: 636px;
+	width: 210px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money_ek6 > a{
+	top: 10px;
+	left: 636px;
+	width: 210px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#pay_bills_ek6 {
+	top: 10px;
+	left: 846px;
+	width: 115px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills_ek6 >a{
+	top: 10px;
+	left: 846px;
+	width: 115px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#account_maintenance_ek6 {
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance_ek6 > a{
+	top: 10px;
+	left: 974px;
+	width: 283px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#cmyaccountcontainer {
+	top: 200px;
+	left: 373px;
+	width: 620px;
+	height: 475px;
+}
+
+#cinfocontainer {
+	top: 0px;
+	left: 0px;
+	width: 620px;
+	height: 475px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(196,196,196,1);
+}
+
+
+#name__ek1 {
+	top: 22px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#gender__ek3 {
+	top: 72px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#account_no__ek1 {
+	top: 120px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#balance__php___ek1 {
+	top: 170px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#date_of_birth__ek3 {
+	top: 220px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#email_address__ek7 {
+	top: 270px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#phone_no___ek3 {
+	top: 320px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#home_address__ek3 {
+	top: 370px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#user_id__ek2 {
+	top: 420px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#password__ek7 {
+	top: 470px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+
+#pin__ek3 {
+	top: 520px;
+	left: 23px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 23px;
+	text-align: left;
+	line-height: 23px;
+	color:#000000;
+}
+
+#page_customer_home_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__customer_home_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#chomenavbar {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#chomenavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek11 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek11 > a{
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek11 {
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek11 > a{
+	top: 30px;
+	left: 815px;
+	width: 127.09px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek11 {
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek11 > a{
+	top: 30px;
+	left: 956px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#logout_ek17 {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+#logout_ek17 >a {
+	top: 30px;
+	left: 1172px;
+	width: 157px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FF0000;
+}
+
+#chomenavbar2 {
+	top: 100px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+}
+
+#chomenavbar2_ek1 {
+	opacity:0.5;
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 50px;
+	background:rgba(43,43,43,0.5);
+}
+
+
+#home_ek16 {
+	top: 10px;
+	left: 142px;
+	width: 72px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#home_ek16 > a{
+	top: 10px;
+	left: 142px;
+	width: 72px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-decoration: underline;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+
+#my_account_ek7 {
+	top: 10px;
+	left: 246px;
+	width: 140px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_account_ek7 >a{
+	top: 10px;
+	left: 246px;
+	width: 140px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#my_transactions_ek7 {
+	top: 10px;
+	left: 415px;
+	width: 207px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#my_transactions_ek7 >a{
+	top: 10px;
+	left: 415px;
+	width: 207px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#transfer_money_ek7 {
+	top: 10px;
+	left: 636px;
+	width: 198px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#transfer_money_ek7 a{
+	top: 10px;
+	left: 636px;
+	width: 198px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#pay_bills_ek7 {
+	top: 10px;
+	left: 846px;
+	width: 118px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#pay_bills_ek7 >a{
+	top: 10px;
+	left: 846px;
+	width: 118px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+
+#account_maintenance_ek7 {
+	top: 10px;
+	left: 974px;
+	width: 269px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#account_maintenance_ek7 >a{
+	top: 10px;
+	left: 974px;
+	width: 269px;
+	height: 68px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: left;
+	line-height: 26px;
+	color:#FFFFFF;
+}
+#page_customer_login_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__customer_login_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#cloginnavbar {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cloginnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek12 {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek12 > a {
+	top: 18px;
+	left: 91px;
+	width: 229px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek12 {
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek12 > a {
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek12 {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek12 > a {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#cloginform {
+	top: 200px;
+	left: 404px;
+	width: 558px;
+	height: 375px;
+}
+
+#clogincontainer {
+	top: 0px;
+	left: 0px;
+	width: 558px;
+	height: 375px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#login_to_wsb_online_banking {
+	top: 28px;
+	left: 69px;
+	width: 461px;
+	height: 67px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 30px;
+	text-align: left;
+	line-height: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #000000;
+	text-shadow: 0 0 1px #000000;
+	color:#F9FF00;
+}
+
+
+#user_id__ek3 {
+	top: 86px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cuseridbox {
+	top: 108px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#password__ek8 {
+	top: 155px;
+	left: 69px;
+	width: 134px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#cpasswordbox {
+	top: 179px;
+	left: 55px;
+	width: 450px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+
+#cloginbtn {
+	top: 240px;
+	left: 344px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+#login_ek2 {
+	top: 247px;
+	left: 402px;
+	width: 45px;
+	height: 34px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#3164E6;
+}
+
+
+#forgot_your_password_user_id_ {
+	top: 275px;
+	left: 69px;
+	width: 295px;
+	height: 41px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+#forgot_your_password_user_id_ > a {
+	top: 275px;
+	left: 69px;
+	width: 295px;
+	height: 41px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#FFFFFF;
+}
+
+
+#register_account_here_ {
+	top: 303px;
+	left: 69px;
+	width: 295px;
+	height: 41px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#E5E5E5;
+}
+#register_account_here_ > a{
+	top: 303px;
+	left: 69px;
+	width: 295px;
+	height: 41px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	color:#E5E5E5;
+}
+
+#page_about_us_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#_bg__about_us_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek22 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#caboutnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek13 {
+	top: 18px;
+	left: 91px;
+	width: 228.38px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek13 >a {
+	top: 18px;
+	left: 91px;
+	width: 228.38px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+#news_ek13 {
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek13 >a{
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#about_us_ek13 {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FFFFFF;
+}
+#about_us_ek13>a {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FFFFFF;
+}
+
+
+#loginbtn_ek4 {
+	top: 24px;
+	left: 1273px;
+	width: 53.36px;
+	height: 50px;
+}
+
+#managerinfo_ek1 {
+	top: 200px;
+	left: 165px;
+	width: 1064px;
+	height: 505px;
+}
+
+#mhomecontainer_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1064px;
+	height: 505px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background:rgba(43,43,43,1);
+}
+
+
+#wall_street_bank_ek11 {
+	top: 21px;
+	left: 309px;
+	width: 446px;
+	height: 142px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#infomanager_ek1 {
+	top: 100px;
+	left: 79px;
+	width: 900px;
+	height: 402px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 26px;
+	text-align: justified;
+	line-height: 50px;
+
+	color:#F9FF00;
+}
+
+#page_news_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+
+}
+
+#_bg__news_page_ek2 {
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 768px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+#nav_bar_ek23 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cnewsnavbar1 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek14 {
+	top: 18px;
+	left: 91px;
+	width: 228.38px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek14 >a {
+	top: 18px;
+	left: 91px;
+	width: 228.38px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek14 {
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FFFFFF;
+}
+#news_ek14 > a {
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#FFFFFF;
+}
+
+
+#about_us_ek14 {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek14 > a{
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+#loginbtn_ek5 {
+	top: 24px;
+	left: 1273px;
+	width: 53.36px;
+	height: 50px;
+}
+
+#page_main_page_ek1 {
+	width: 100%;
+	height: 100%;
+	background:rgba(171.06,171.06,171.06,1);
+
+}
+
+
+#_bg__main_page_ek2 {
+	
+	top:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1366px;
+	height: 700px;
+	background:rgba(171.06,171.06,171.06,1);
+}
+
+
+#nav_bar_ek24 {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+}
+
+#cmainnavbar {
+	top: 0px;
+	left: 0px;
+	width: 1366px;
+	height: 100px;
+	background:rgba(23,23,23,1);
+}
+
+
+#wsb_ek15 {
+	top: 18px;
+	left: 91px;
+	width: 228.38px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+#wsb_ek15 >a {
+	top: 18px;
+	left: 91px;
+	width: 228.38px;
+	height: 107px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 60px;
+	color:#F9FF00;
+}
+
+
+#news_ek15 {
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#news_ek15 > a{
+	top: 30px;
+	left: 800px;
+	width: 300px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+
+#about_us_ek15 {
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+#about_us_ek15 > a{
+	top: 30px;
+	left: 1060px;
+	width: 200px;
+	height: 78px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 40px;
+	text-align: left;
+	line-height: 40px;
+	color:#ABABAB;
+}
+
+
+
+#loginbtn_ek6 {
+	top: 24px;
+	left: 1273px;
+	width: 53.36px;
+	height: 50px;
+}
+
+
+#newpass {
+	top: 120px;
+	left: 50px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+#newpassb1 {
+	top: 150px;
+	left: 30px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#newpass2 {
+	top: 215px;
+	left: 50px;
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: left;
+	line-height: 22px;
+	color:#FFFFFF;
+}
+#newpassb2 {
+	top: 250px;
+	left: 30px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#newpassbtn {
+	top: 363px;
+	left: 414px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+#npass{
+	font-size:14pt;
+	top: 215px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+#cnpass{
+	font-size:14pt;
+	top: 289px;
+	left: 75px;
+	width: 500px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(255,255,255,1);
+}
+
+#newpassbtn {
+	top: 310px;
+	left: 350px;
+	width: 161px;
+	height: 35px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:rgba(249.9,255,0,1);
+}
+
+
+
+
+
+/* Add your custom CSS here */

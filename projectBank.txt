@@ -1,0 +1,52 @@
+//sql query
+CREATE TABLE `customer` (
+  `custID` INT NOT NULL AUTO_INCREMENT, 
+  `FirstName` varchar(255) NOT NULL,
+  `LastName` varchar(255) NOT NULL,
+  `Gender` varchar(50) NOT NULL,
+  `DoB` varchar(255) NOT NULL,
+  `Address` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Phone` varchar(255) NOT NULL,
+  `Balance` double NOT NULL,
+  `AccNo` int(20) NOT NULL,
+  `PIN` varchar(255) NOT NULL,
+  `UserName` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+   Primary Key(custID,AccNo));
+
+
+CREATE TABLE `admin` (
+  `Username` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+   Email varchar(255),
+   Primary Key(Username)
+);
+
+Create Table Manager (ID INT AUTO_INCREMENT,
+	ManagerID VARCHAR(255), 
+	Firstname VARCHAR(255), 
+	LastName VARCHAR(255), 
+	Email VARCHAR(255), 
+	Password VARCHAR(255), 
+	Primary Key(ID,ManagerID));
+
+CREATE TABLE `adminLogs` (
+   AdminID VARCHAR(255),  
+  `AccNo` varchar(255),
+  `Description` LONGTEXT,
+   Date DateTime
+);
+
+CREATE TABLE `managerLogs` (
+   ManagerID VARCHAR(255)
+  `AccNo` varchar(255),
+  `Description` LONGTEXT,
+   Date DateTime
+);
+
+CREATE TABLE `customerLogs` (
+  `AccNo` varchar(255),
+  `Description` LONGTEXT,
+   Date DateTime
+);
